@@ -1,0 +1,28 @@
+/* Navbar.module.css */
+.navLink {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.navLink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.navLink:hover::before {
+  transform: scaleX(1);
+}

@@ -11,3 +11,7 @@
   font-family: "myTupiBold";
   src: url("../public/mytupiBOLD.ttf");
 }
+
+* {
+  overflow: hidden;
+}
