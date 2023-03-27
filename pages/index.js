@@ -56,7 +56,7 @@ export default function Home({ setNavBgColor }) {
             <div className="flex flex-col md:flex-row">
               {/* About Section */}
               <div className="w-full md:w-1/2 p-4">
-                <h2 className="text-4xl font-bold mb-4">ABOUT</h2>
+                <h2 className="text-4xl font-bold mb-4">ABOUT:</h2>
                 <p className="font-myTupiBold">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer nec odio. Praesent libero. Sed cursus ante dapibus
@@ -71,7 +71,7 @@ export default function Home({ setNavBgColor }) {
               {/* Skills Section */}
               <div className="w-full md:w-1/2 p-4 ">
                 <h2 className="text-4xl font-myTupiBold mb-4 uppercase">
-                  Skills
+                  Skills:
                 </h2>
                 <ul className="text-2xl font-myTupiBold uppercase mb-20">
                   <li className="mb-2">* REACT</li>
