@@ -1,6 +1,7 @@
 import Navbar from "@/components/navBar";
 import "@/styles/globals.css";
 import { AnimatePresence } from "framer-motion";
+import React from "react";
 
 export default function App({ Component, pageProps, router }) {
   return (

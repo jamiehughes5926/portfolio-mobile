@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import styles from "../styles/nav.module.css";
+import { motion as m } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,10 @@ const Navbar = () => {
   const currentPage = pages.find((page) => page.path === router.pathname);
 
   return (
-    <nav className="font-myTupiBold md:text-2xl relative uppercase bg-transparent z-20 overflow-hidden">
+    <nav
+      className={`font-myTupiBold md:text-2xl relative uppercase z-20 overflow-hidden`}
+    >
+      {" "}
       <div className="mx-auto flex justify-between items-center md:justify-evenly">
         <div className="hidden md:flex md:w-full">
           {pages.map((page, index) => (
@@ -43,30 +47,30 @@ const Navbar = () => {
           ))}
         </div>
         <div className="md:hidden flex justify-between w-full">
-          <div className="text-black font-bold bg-red-500 w-1/2 h-20">
+          <div className="text-black font-bold bg-white w-1/2 h-15 p-3  ">
             {currentPage ? currentPage.name : "Your Brand"}
           </div>
           <button
             onClick={toggleMenu}
-            className="focus:outline-none bg-blue-500 w-1/2 flex justify-between"
+            className="focus:outline-none text-white p-3 bg-black w-1/2 flex justify-between"
           >
             MENU
             {isMenuOpen ? (
-              <XIcon className="h-10 w-10 text-black" />
+              <XIcon className="h-10 w-10 text-white" />
             ) : (
-              <MenuIcon className="h-10 w-10 text-black" />
+              <MenuIcon className="h-10 w-10 text-white" />
             )}
           </button>
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden mt-2">
-          <div className="p-2 space-y-2 h-screen">
+        <div className="md:hidden ">
+          <div className="p-2 space-y-2 h-screen bg-white">
             {pages.map((page) => (
               <Link legacyBehavior key={page.path} href={page.path}>
                 <a
                   onClick={toggleMenu}
-                  className="block text-black hover:text-black py-10 bg-white"
+                  className="block text-black hover:text-black py-10 bg-white border-b-2"
                 >
                   {page.name}
                 </a>
