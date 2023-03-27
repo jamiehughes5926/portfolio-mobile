@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`font-myTupiBold md:text-2xl relative uppercase z-20 overflow-hidden`}
+      className={`font-myTupiBold md:text-2xl relative uppercase z-20 overflow-hidden bg-whitey`}
     >
       {" "}
       <div className="mx-auto flex justify-between items-center md:justify-evenly">
@@ -47,7 +47,7 @@ const Navbar = () => {
           ))}
         </div>
         <div className="md:hidden flex justify-between w-full">
-          <div className="text-black font-bold bg-white w-1/2 h-15 p-3  ">
+          <div className="text-black font-bold bg-whitey border border-b-black w-1/2 h-15 p-3  ">
             {currentPage ? currentPage.name : "Your Brand"}
           </div>
           <button
@@ -65,12 +65,12 @@ const Navbar = () => {
       </div>
       {isMenuOpen && (
         <div className="md:hidden ">
-          <div className="p-2 space-y-2 h-screen bg-white">
+          <div className="p-2 space-y-2 h-screen bg-whitey">
             {pages.map((page) => (
               <Link legacyBehavior key={page.path} href={page.path}>
                 <a
                   onClick={toggleMenu}
-                  className="block text-black hover:text-black py-10 bg-white border-b-2"
+                  className="block text-black hover:text-black py-10 bg-whitey border-black border-b"
                 >
                   {page.name}
                 </a>

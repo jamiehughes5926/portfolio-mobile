@@ -19,6 +19,7 @@ module.exports = {
         myPurple: "#E8E4FF",
         honeydew: "#DDF8E8",
         myBlue: "#DCEAF7",
+        whitey: "#f2f2f2",
       },
     },
   },
