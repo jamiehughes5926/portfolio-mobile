@@ -84,19 +84,6 @@ export default function Home({ setNavBgColor }) {
               </div>
             </div>
           </div>
-
-          <div className="flex justify-center items-center min-h-screen w-full">
-            <video
-              src="/footage.mp4"
-              width="80%"
-              height="auto"
-              preload="metadata"
-              autoPlay
-              loop
-              muted
-              className="max-w-full"
-            />
-          </div>
         </div>
       </m.div>
     </div>

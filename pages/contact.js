@@ -2,6 +2,7 @@ import Head from "next/head";
 import { motion as m } from "framer-motion";
 import React, { useEffect } from "react";
 import Navbar from "@/components/navBar";
+import ContactForm from "@/components/contactForm";
 
 export default function contact({}) {
   return (
@@ -25,6 +26,7 @@ export default function contact({}) {
           CONTACT{" "}
         </div>
         <div className="border-b border-black mt-10"></div>
+        <ContactForm />
       </m.h1>{" "}
     </m.div>
   );

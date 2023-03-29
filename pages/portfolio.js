@@ -26,10 +26,7 @@ export default function portfolio({}) {
           initial={{ y: "60%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 text-6xl mt-10 font-myTupiBold ">
-            PORTFOLIO{" "}
-          </div>
-          <div className="border-b border-black mt-10 md:mb-7"></div>
+          <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 text-6xl mt-10 font-myTupiBold "></div>
         </m.h1>{" "}
         <div className="container md:mt-10 mx-auto ">
           <div className="w-full flex flex-col md:flex-row mr-5  ">
