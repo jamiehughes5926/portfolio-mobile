@@ -39,42 +39,47 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        value={formData.name}
-        onChange={handleChange}
-        className="w-1/2 p-2 border border-gray-300 rounded"
-        required
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        value={formData.email}
-        onChange={handleChange}
-        className="w-1/2 p-2 border border-gray-300 rounded"
-        required
-      />
-      <textarea
-        name="message"
-        placeholder="Your Message"
-        value={formData.message}
-        onChange={handleChange}
-        className="w-full p-2 border border-gray-300 rounded"
-        rows="5"
-        required
-      ></textarea>
-      <button
-        type="submit"
-        className="w-1/3 p-2  text-white bg-blue-600 rounded hover:bg-blue-700"
+    <div className="flex items-center justify-center font-myTupi">
+      <form
+        onSubmit={handleSubmit}
+        className="flex pt-10 flex-col space-y-3 w-4/5 md:w-1/2"
       >
-        Send Message
-      </button>
-      <div className="text-center">{status && <p>{status}</p>}</div>
-    </form>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          className="w-full p-2 border border-gray-300 rounded"
+          rows="5"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          className="w-1/3 p-2 text-white bg-black rounded hover:bg-blue-700"
+        >
+          Send Message
+        </button>
+        <div className="text-center">{status && <p>{status}</p>}</div>
+      </form>
+    </div>
   );
 };
 
