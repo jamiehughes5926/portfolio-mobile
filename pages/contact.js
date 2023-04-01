@@ -25,7 +25,7 @@ export default function contact({}) {
         <div className="md:text-9xl md:ml-10 ml-5 text-6xl mt-20 font-myTupiBold ">
           CONTACT{" "}
         </div>
-        <div className="border-b border-black mt-10"></div>
+        <div className="border-b border-black "></div>
         <ContactForm />
       </m.h1>{" "}
     </m.div>

@@ -37,12 +37,11 @@ const ContactForm = () => {
       setStatus("Failed to send message. Please try again later.");
     }
   };
-
   return (
-    <div className="flex items-center justify-center font-myTupi">
+    <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start font-myTupi">
       <form
         onSubmit={handleSubmit}
-        className="flex pt-10 flex-col space-y-3 w-4/5 md:w-1/2"
+        className="flex flex-col space-y-3 w-full md:w-1/2 md:pl-10 md:pt-10"
       >
         <input
           type="text"
@@ -73,7 +72,7 @@ const ContactForm = () => {
         ></textarea>
         <button
           type="submit"
-          className="w-1/3 p-2 text-white bg-black rounded hover:bg-blue-700"
+          className="w-1/3 p-2 text-white bg-black rounded hover:bg-blue-700 uppercase font-myTupiBold"
         >
           Send Message
         </button>
