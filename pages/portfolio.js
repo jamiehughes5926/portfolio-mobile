@@ -26,10 +26,10 @@ export default function portfolio({}) {
           initial={{ y: "60%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 text-6xl mt-10 font-myTupiBold "></div>
+          <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 mt:10 text-6xl mt-10 font-myTupiBold "></div>
         </m.h1>{" "}
         <div className="container md:mt-10 mx-auto ">
-          <div className="w-full flex flex-col md:flex-row mr-5  ">
+          <div className="w-full flex flex-col md:flex-row mr-5   ">
             <RevealImageLeft src="./1.webp" alt="Project 1" />
             <div className="w-full md:w-1/2   md:mt-0 md:ml-5 uppercase text-right">
               <h2 className="text-2xl md:font-bold mr-1 md:mr-0 md:border md:border-black md:border-b-0 ">
