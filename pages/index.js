@@ -31,8 +31,11 @@ export default function Home({ setNavBgColor }) {
             initial={{ y: "60%" }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <div className="md:text-9xl ml-5 md:ml-10 md:mt-20 text-6xl mt-20  font-myTupiBold">
-              JAMIE HUGHES <span className="spin">*</span>
+            <div
+              data-text="JAMIE HUGHES"
+              className="glitch md:text-9xl ml-5 md:ml-10 md:mt-20 text-6xl mt-20  font-myTupiBold"
+            >
+              JAMIE HUGHES
             </div>
           </m.h1>
           <m.h1

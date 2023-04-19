@@ -12,3 +12,7 @@
   font-size: 2rem;
   animation: spin 1s linear infinite;
 }
+
+.glitch {
+  color: red;
+}
