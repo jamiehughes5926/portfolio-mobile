@@ -53,9 +53,9 @@ export default function Home({ setNavBgColor }) {
               <div className="w-full md:w-1/2 p-4 border border-black md:mr-5 md:mb-0 mb-10 bg-myBlue ">
                 <h2 className="text-4xl font-bold mb-4">ABOUT</h2>
                 <p className="font-myTupi uppercase">
-                  Hi, I'm Jamie Hughes, A Front-End Developer, Currently
-                  studying a Bachelor of Science majoring in Computer Science at
-                  Massey University, finishing in 2023.
+                  Hi, I am a Front-End Developer, Currently studying a Bachelor
+                  of Science majoring in Computer Science at Massey University,
+                  finishing in 2023.
                   <br></br>
                   <br></br>I Have previously freelanced using upwork developing
                   websites and webapps along with creating websites for local
