@@ -1,7 +1,10 @@
 import Head from "next/head";
 import { motion as m } from "framer-motion";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "@/components/navBar";
+import ScrollingBanner from "@/components/ScrollingBanner";
+import styles from "../styles/Home.module.css";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export default function Home({ setNavBgColor }) {
   useEffect(() => {
@@ -29,20 +32,19 @@ export default function Home({ setNavBgColor }) {
             transition={{ delay: 0.5, duration: 0.5 }}
           >
             <div className="md:text-9xl ml-5 md:ml-10 md:mt-20 text-6xl mt-20  font-myTupiBold">
-              JAMIE HUGHES
+              JAMIE HUGHES <span className="spin">*</span>
             </div>
           </m.h1>
           <m.h1
             animate={{ y: 0 }}
             initial={{ y: "100%" }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="md:text-6xl ml-5 text-5xl font-myTupiBold md:ml-10"
+            className="md:text-6xl ml-5 text-5xl font-myTupiBold md:ml-0"
           >
-            FRONT END DEVELOPER
+            <ScrollingBanner text="FRONT END DEV * FRONT" speed={1.5} />
           </m.h1>
-
-          <div className="border-b border-black ml-0 mt-10"></div>
-          <div className="w-full px-4">
+          <div className="border-b border-black ml-0 mt-5"></div>
+          <div className="w-full px-4 ">
             <div className="flex flex-col md:flex-row">
               {/* About Section */}
               <div className="w-full md:w-1/2 p-4">
@@ -57,11 +59,43 @@ export default function Home({ setNavBgColor }) {
                   conubia nostra, per inceptos himenaeos.
                 </p>
               </div>
-
               {/* Skills Section */}
               <div className="w-full md:w-1/2 p-4 ">
                 <h2 className="text-4xl font-myTupiBold mb-4 uppercase">
                   Skills:
+                </h2>
+                <p className="font-myTupi uppercase mb-20">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                  augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+                  nulla. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full px-4 mb-10">
+            <div className="flex flex-col md:flex-row">
+              {/* About Section */}
+              <div className="w-full md:w-1/2 p-4 border border-black md:mr-10 md:mb-0 mb-10">
+                <h2 className="text-4xl font-bold mb-4">DESIGNER</h2>
+                <p className="font-myTupi uppercase">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
+                  diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                  Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed
+                  augue semper porta. Mauris massa. Vestibulum lacinia arcu eget
+                  nulla. Class aptent taciti sociosqu ad litora torquent per
+                  conubia nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              {/* Skills Section */}
+              <div className="w-full md:w-1/2 p-4 border border-black md:ml-10">
+                <h2 className="text-4xl font-myTupiBold mb-4 uppercase">
+                  FRONT END DEVELOPER
                 </h2>
                 <p className="font-myTupi uppercase mb-20">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -16,6 +16,7 @@ const Navbar = () => {
   const pages = [
     { name: "HOME", path: "/" },
     { name: "PORTFOLIO", path: "/portfolio" },
+    { name: "TEST", path: "/resume" },
   ];
 
   const currentPage = pages.find((page) => page.path === router.pathname);

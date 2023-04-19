@@ -2,6 +2,7 @@ import Head from "next/head";
 import { motion as m } from "framer-motion";
 import React, { useEffect } from "react";
 import Navbar from "@/components/navBar";
+import ScrollingBanner from "@/components/ScrollingBanner";
 
 export default function resume({}) {
   return (
@@ -21,9 +22,7 @@ export default function resume({}) {
         initial={{ y: "60%" }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
-        <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 text-7xl mt-20 font-myTupiBold ">
-          RESUME{" "}
-        </div>
+        <div className="md:text-9xl md:ml-10 ml-5 md:mt-20 text-7xl mt-20 font-myTupiBold "></div>
         <div className="border-b border-black mt-10"></div>
       </m.h1>{" "}
     </m.div>
