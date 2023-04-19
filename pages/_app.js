@@ -19,7 +19,7 @@ export default function App({ Component, pageProps, router }) {
   }, [loading]);
 
   return (
-    <div className="">
+    <div className="bg-whitey">
       {showLoadingScreen && <LoadingScreen />}
       {!showLoadingScreen && (
         <>
