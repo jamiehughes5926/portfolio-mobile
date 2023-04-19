@@ -41,7 +41,9 @@ export default function portfolio({}) {
               </h2>
               <p className="mr-1 md:mr-0 border border-b-black md:border-black md:border-t-0 p-3">
                 A fullstack netflix clone which was built using redux,
-                firestore, stripe checkout and google auth
+                firestore, stripe checkout and google auth, Sign up by clicking
+                the sign up button instead of the sign in with your username and
+                password filled in
                 <br />
                 <a
                   className="font-myTupiBold"

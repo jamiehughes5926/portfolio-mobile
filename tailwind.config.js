@@ -21,6 +21,7 @@ module.exports = {
         honeydew: "#DDF8E8",
         myBlue: "#DCEAF7",
         whitey: "#f2f2f2",
+        ivory: "#FDFFE4",
       },
     },
   },
