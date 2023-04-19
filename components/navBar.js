@@ -16,7 +16,6 @@ const Navbar = () => {
   const pages = [
     { name: "HOME", path: "/" },
     { name: "PORTFOLIO", path: "/portfolio" },
-    { name: "TEST", path: "/resume" },
   ];
 
   const currentPage = pages.find((page) => page.path === router.pathname);
@@ -31,7 +30,7 @@ const Navbar = () => {
           {pages.map((page, index) => (
             <div
               key={page.path}
-              className={`flex-1 border border-black border-t-0 ${
+              className={`flex-1 border  border-black border-t-0 ${
                 index !== pages.length ? "border-r-0" : ""
               }`}
             >

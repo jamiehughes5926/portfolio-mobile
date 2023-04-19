@@ -33,7 +33,7 @@ export default function Home({ setNavBgColor }) {
           >
             <div
               data-text="JAMIE HUGHES"
-              className="glitch md:text-9xl ml-5 md:ml-10 md:mt-20 text-6xl mt-20  font-myTupiBold"
+              className="glitch md:text-9xl ml-5 md:ml-10 md:mt-20 md:p-0 text-6xl mt-20 font-myTupiBold"
             >
               JAMIE HUGHES
             </div>
@@ -47,11 +47,11 @@ export default function Home({ setNavBgColor }) {
             <ScrollingBanner text="FRONT END DEV * FRONT" speed={1.5} />
           </m.h1>
           <div className="border-b border-black ml-0 mt-5"></div>
-          <div className="w-full px-4 ">
-            <div className="flex flex-col md:flex-row">
+          <div className="w-full px-4 mb-10">
+            <div className="flex flex-col md:flex-row mt-10">
               {/* About Section */}
-              <div className="w-full md:w-1/2 p-4">
-                <h2 className="text-4xl font-bold mb-4">ABOUT:</h2>
+              <div className="w-full md:w-1/2 p-4 border border-black md:mr-5 md:mb-0 mb-10 bg-myBlue ">
+                <h2 className="text-4xl font-bold mb-4">ABOUT</h2>
                 <p className="font-myTupi uppercase">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer nec odio. Praesent libero. Sed cursus ante dapibus
@@ -63,9 +63,9 @@ export default function Home({ setNavBgColor }) {
                 </p>
               </div>
               {/* Skills Section */}
-              <div className="w-full md:w-1/2 p-4 ">
+              <div className="w-full md:w-1/2 p-4 border bg-myPurple border-black md:ml-5">
                 <h2 className="text-4xl font-myTupiBold mb-4 uppercase">
-                  Skills:
+                  SKILLS
                 </h2>
                 <p className="font-myTupi uppercase mb-20">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -83,7 +83,7 @@ export default function Home({ setNavBgColor }) {
           <div className="w-full px-4 mb-10">
             <div className="flex flex-col md:flex-row">
               {/* About Section */}
-              <div className="w-full md:w-1/2 p-4 border border-black md:mr-10 md:mb-0 mb-10">
+              <div className="w-full md:w-1/2 p-4 border border-black md:mr-5 md:mb-0 mb-10 bg-myGreen">
                 <h2 className="text-4xl font-bold mb-4">DESIGNER</h2>
                 <p className="font-myTupi uppercase">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -96,7 +96,7 @@ export default function Home({ setNavBgColor }) {
                 </p>
               </div>
               {/* Skills Section */}
-              <div className="w-full md:w-1/2 p-4 border border-black md:ml-10">
+              <div className="w-full md:w-1/2 p-4 border bg-myYellow border-black md:ml-5">
                 <h2 className="text-4xl font-myTupiBold mb-4 uppercase">
                   FRONT END DEVELOPER
                 </h2>
