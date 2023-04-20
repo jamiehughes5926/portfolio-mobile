@@ -90,19 +90,34 @@ export default function portfolio({}) {
             </div>
           </div>
           <div className="w-full flex flex-col md:flex-row mr-5 ">
-            <RevealImageLeft src="./1.webp" alt="Project 1" />
+            <RevealImageLeft src="./palette.jpeg" alt="Project 1" />
             <div className="w-full md:w-1/2   md:mt-0 md:ml-5 uppercase text-right md:text-right  ">
               <h2 className="text-2xl md:font-bold mr-1 md:mr-0 md:border md:border-black md:border-b-0 p-3">
-                PROJECT 3
+                IMAGE PALETTE GENERATOR
               </h2>
               <p className="mr-1 md:mr-0 border border-b-black md:border-black md:border-t-0 p-3">
-                A short description of your project goes here. This can include
-                some details about the project, the technologies used, or the
-                purpose of the project.
+                A Palette Generator that takes an image and creates a palette
+                for the image, created using NEXT JS, css and the colorthief
+                package
+                <br></br>
+                <a
+                  className="font-myTupiBold"
+                  href="https://main--rad-heliotrope-6f0d46.netlify.app/"
+                  target="_blank"
+                >
+                  live
+                </a>
+                <br />
+                <a
+                  className="font-myTupiBold"
+                  href="https://github.com/jamiehughes5926/palette-gen"
+                >
+                  github
+                </a>
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row-reverse  md:mt-10 ">
+          {/* <div className="w-full flex flex-col md:flex-row-reverse  md:mt-10 ">
             <RevealImageRight src="./1.webp" alt="Project 2" />
             <div className="w-full md:w-1/2  md:mt-0 md:mr-5 uppercase md:text-left  ">
               <h2 className="text-2xl md:font-bold ml-1 md:ml-0 md:border md:border-black md:border-b-0">
@@ -114,7 +129,7 @@ export default function portfolio({}) {
                 purpose of the project.
               </p>
             </div>
-          </div>
+          </div> */}
           {/* Add more projects as needed */}
         </div>
       </m.div>
