@@ -51,7 +51,7 @@ export default function Home({ setNavBgColor }) {
             <div className="flex flex-col md:flex-row mt-10">
               {/* About Section */}
               <div className="w-full md:w-1/2 p-4 border border-black md:mr-5 md:mb-0 mb-10 bg-myBlue ">
-                <h2 className="text-4xl font-bold mb-4">ABOUT</h2>
+                <h2 className="text-4xl font-bold mb-4">ABOUT:</h2>
                 <p className="font-myTupi uppercase">
                   Hi, I am a Front-End Developer, Currently studying a Bachelor
                   of Science majoring in Computer Science at Massey University,

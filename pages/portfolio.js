@@ -120,9 +120,9 @@ export default function portfolio({}) {
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row mr-5 ">
+          <div className="w-full flex flex-col md:flex-row-reverse mr-5 ">
             <RevealImageRight src="./palette.jpeg" alt="Project 1" />
-            <div className="w-full md:w-1/2   md:mt-0 md:ml-5 uppercase text-right md:text-right  ">
+            <div className="w-full md:w-1/2   md:mt-0 md:mr-5 uppercase text-right md:text-right  ">
               <h2 className="text-2xl md:font-bold mr-1 md:mr-0 md:border md:border-black md:border-b-0 p-3">
                 IMAGE PALETTE GENERATOR
               </h2>
