@@ -89,8 +89,35 @@ export default function portfolio({}) {
               </p>
             </div>
           </div>
+          <div className="w-full flex flex-col md:flex-row-reverse  md:mt-10 ">
+            <RevealImageLeft src="./gym.png" alt="Project 2" />
+            <div className="w-full md:w-1/2  md:mt-0 md:mr-5 uppercase md:text-left  ">
+              <h2 className="text-2xl md:font-bold ml-1 md:ml-0 md:border md:border-black md:border-b-0">
+                Gym website mock
+              </h2>{" "}
+              <p className="ml-1 md:ml-0 border border-b-black md:border-black md:border-t-0">
+                I created a mock up of gym website using react, vite, framer
+                motion and tailwind css
+                <br />
+                <a
+                  className="font-myTupiBold"
+                  href="https://main--glistening-seahorse-0072be.netlify.app/"
+                  target="_blank"
+                >
+                  live
+                </a>
+                <br />
+                <a
+                  className="font-myTupiBold"
+                  href="https://github.com/jamiehughes5926/gym-vite"
+                >
+                  github
+                </a>
+              </p>
+            </div>
+          </div>
           <div className="w-full flex flex-col md:flex-row mr-5 ">
-            <RevealImageLeft src="./palette.jpeg" alt="Project 1" />
+            <RevealImageRight src="./palette.jpeg" alt="Project 1" />
             <div className="w-full md:w-1/2   md:mt-0 md:ml-5 uppercase text-right md:text-right  ">
               <h2 className="text-2xl md:font-bold mr-1 md:mr-0 md:border md:border-black md:border-b-0 p-3">
                 IMAGE PALETTE GENERATOR
@@ -117,19 +144,7 @@ export default function portfolio({}) {
               </p>
             </div>
           </div>
-          {/* <div className="w-full flex flex-col md:flex-row-reverse  md:mt-10 ">
-            <RevealImageRight src="./1.webp" alt="Project 2" />
-            <div className="w-full md:w-1/2  md:mt-0 md:mr-5 uppercase md:text-left  ">
-              <h2 className="text-2xl md:font-bold ml-1 md:ml-0 md:border md:border-black md:border-b-0">
-                Project 4 Title
-              </h2>{" "}
-              <p className="ml-1 md:ml-0 border border-b-black md:border-black md:border-t-0">
-                A short description of your project goes here. This can include
-                some details about the project, the technologies used, or the
-                purpose of the project.
-              </p>
-            </div>
-          </div> */}
+
           {/* Add more projects as needed */}
         </div>
       </m.div>
