@@ -89,15 +89,19 @@ export default function portfolio({}) {
               </p>
             </div>
           </div>
-          <div className="w-full flex flex-col md:flex-row-reverse  md:mt-10 ">
-            <RevealImageLeft src="./gym.png" alt="Project 2" />
-            <div className="w-full md:w-1/2  md:mt-0 md:mr-5 uppercase md:text-left  ">
-              <h2 className="text-2xl md:font-bold ml-1 md:ml-0 md:border md:border-black md:border-b-0">
-                Gym website mock
-              </h2>{" "}
-              <p className="ml-1 md:ml-0 border border-b-black md:border-black md:border-t-0">
-                I created a mock up of gym website using react, vite, framer
-                motion and tailwind css
+          <div className="w-full flex flex-col md:flex-row mr-5   ">
+            <RevealImageLeft
+              className="w-1/3"
+              src="./gym.png"
+              alt="Project 1"
+            />
+            <div className="w-full md:w-1/2 md:mt-0 md:ml-5 uppercase text-right">
+              <h2 className="text-2xl md:font-bold mr-1 md:mr-0 md:border md:border-black md:border-b-0 p-3  ">
+                GYM WESBITE
+              </h2>
+              <p className="mr-1 md:mr-0 border border-b-black md:border-black md:border-t-0 p-3">
+                A gym website mock up using react, vite, tailwindcss and framer
+                motion
                 <br />
                 <a
                   className="font-myTupiBold"
